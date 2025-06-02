@@ -22,4 +22,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/cek-db', [CekDbController::class, 'cekDb']);
 Route::post('/set-nomkot', [CekDbController::class, 'setNewNomkot']);
-Route::get('/testing-api/{count}', [LoadTesting::class, 'loadTesting']);
+Route::get('/data/{count}', [LoadTesting::class, 'loadTesting']);
